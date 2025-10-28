@@ -58,6 +58,7 @@ p {
     padding-right: 1%;
     font-weight: 300;
     color: hsla(0, 0%, 100%, 0.75);
+    margin: 1%;
 }
 
 .Sedans button {
@@ -119,4 +120,5 @@ button:hover {
     .Luxury {
         border-radius: 0 5px 5px 0;
     }
+
 }
