@@ -1,0 +1,122 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    height: 120vh;
+    background-color: hsl(0, 0%, 95%);
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+}
+
+main {
+    max-width: 320px;
+}
+
+img {
+    width: 50px;
+}
+
+section {
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+}
+
+.Sedans {
+    background-color: hsl(31, 77%, 52%);
+    border-radius: 5px 5px 0 0;
+    padding: 15%;
+}
+
+.Suvs {
+    background-color: hsl(184, 100%, 22%);
+    border-radius: 0;
+    padding: 15%;
+}
+
+.Luxury {
+    background-color: hsl(179, 100%, 13%);
+    border-radius: 0 0 5px 5px;
+    padding: 15%;
+}
+
+h2 {
+    font-family: 'Big Shoulders';
+    color: hsl(0, 0%, 95%);
+    font-weight: 500;
+    font-size: 30px;
+}
+
+p {
+    font-family: 'Lexend Deca';
+    font-size: 15px;
+    padding-right: 1%;
+    font-weight: 300;
+    color: hsla(0, 0%, 100%, 0.75);
+}
+
+.Sedans button {
+    color: hsl(31, 77%, 52%);
+}
+
+.Suvs button {
+    color: hsl(184, 100%, 22%);
+}
+
+.Luxury button {
+    color: hsl(179, 100%, 13%);
+}
+
+button {
+    border-radius: 20px;
+    border: none;
+    padding: 5% 0;
+    margin-right: 36%;
+}
+
+button:hover {
+    color: hsl(0, 0%, 95%);
+    border: 1px solid hsl(0, 0%, 95%);
+    cursor: pointer;
+}
+
+.Sedans button:hover {
+    background-color: hsl(31, 77%, 52%);
+}
+
+.Suvs button:hover {
+    background-color: hsl(184, 100%, 22%);
+}
+
+.Luxury button:hover {
+    background-color: hsl(179, 100%, 13%);
+}
+
+@media (min-width:920px) {
+    body{
+        height: 100vh;
+    }
+    main {
+        max-width: 800px;
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+    }
+
+    section {
+        display: flex;
+        gap: 50px;
+    }
+
+    .Sedans {
+        border-radius: 5px 0 0 5px;
+    }
+
+    .Luxury {
+        border-radius: 0 5px 5px 0;
+    }
+}
